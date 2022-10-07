@@ -24,15 +24,20 @@ a { outline: none; color: inherit; text-decoration: none;}
     grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
     grid-auto-rows: auto;
     gap: 1rem;
-    margin-top: 4rem;
+}
+
+section:not(:last-child) {
+    margin-bottom: 1rem;
 }
 
 .grid-item {
-    background-color: #ffffff;
-    height: auto; /* needs to be set later! */
+    background-color: white;
+    height: auto; /* needs to be set later! depends on length of datashop name */
     padding: 1rem;
     border: 1px solid #e4e4e4;
+    border-radius: 6px;
     transition: all .3s ease-in-out;
+    /* text overflow has to be added depending on height */
 }
 
 .grid-item:hover {
